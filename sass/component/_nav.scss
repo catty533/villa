@@ -1,0 +1,71 @@
+@import"../Global/mixin";
+nav{
+    display: flex;
+    background: $background;
+    justify-content: space-between;
+    align-items: center;
+    flex: 4;
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    padding: 30px;
+    font-size: 20px;
+     @include responsive(tablet){
+        padding: 13px;
+    }
+    @include responsive(phone){
+        // padding: 5%;  
+        margin-left: -15%;
+        margin-right: 10%;
+        font-size: 17px;
+        margin-top: 5%;
+    }
+   
+}
+.nav-center{
+    flex: 2;
+}
+.nav-left {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    @include responsive(tablet){
+        flex: 0.2;
+    }
+    @include responsive(phone){
+        flex: 0.1;
+    }
+    img{
+        @include responsive(phone){
+            width: 100px;
+        }
+    }
+}
+.nav-right{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    button{
+        padding: 10px;
+        background:$yellow;
+        border-radius: 5px;
+        border: none;
+        margin-left: 20px;
+        font-family: sans-serif;
+        @include responsive(tablet){
+            margin-left: 10px;
+        }
+        @include responsive(phone){
+            display: none;
+            flex: none;
+        }
+    }
+}
+

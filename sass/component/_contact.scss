@@ -1,0 +1,43 @@
+.title-contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    font-family: sans-serif;
+}
+hr{
+    margin: 0% 15% 5% 15%;
+}
+.information{
+    display: flex;
+    flex: 3;
+    margin-top: 4%;
+}
+.contact-information{
+    display: flex;
+    flex: 1.5;
+    flex-direction: column;
+    margin-left: 20%;
+    @include responsive (phone){
+        margin-left: 5%;
+    }
+}
+.icon-contact img{
+    padding-right: 10px;
+    
+}
+.contact-img{
+    flex:1.5;
+    justify-content: center;
+    display: flex;
+    @include responsive(phone){
+        display: none;
+    }
+}
+.icon-contact{
+    display: flex;
+    align-items: center;
+   
+}
+p{
+    font-size: $pharagraph;
+}
